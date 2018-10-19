@@ -21,3 +21,9 @@
 8. obtiene el primer hijo del elemnto al que se le aplica.
 
 9. mientras este ese elemento se removera ese elemento, por lo tanto ya no tendra elementos.
+
+10. toma la coleccion de nodos hijos en el elemento "i" y los retorna como contenido de texto.
+
+11. el query selector alamacena la tabla seleccionado con los identificadores enviados como parametro.
+
+12. 

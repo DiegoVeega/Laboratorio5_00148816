@@ -27,18 +27,18 @@ navSlide();
 /*********************************Colocar aca el desarrollo de su ejercicio***************************/
 var cont=1;
 var bitacoras=[];
-var formulario=documen.getElementById('bitacora');
+var formulario=document.getElementById('bitacora');
 
-formulario.addEventListener("submit", (evt) => {
+/*formulario.addEventListener("submit", (evt) => {
     evt.preventDefault();
-});
 
-bitacoras = {
+*/
+/*bitacoras = {
     cant,
     fecha,
     descripcion,
-    contidad
-}
+    cantidad
+}*/
 formulario.addEventListener("submit", (evt) => {
     evt.preventDefault();
     let bitacora = {
@@ -56,7 +56,7 @@ formulario.addEventListener("submit", (evt) => {
     let tr = document.createElement("tr");
     Object.values(bitacora).forEach(item => {
         let td = document.createElement("td");
-        let content=document.createTexNode(item);
+        let content=document.createTextNode(item);
         td.appendChild(content);
         tr.appendChild(td);
         tr.setAttribute('class','click');
@@ -77,4 +77,14 @@ formulario.addEventListener("submit", (evt) => {
       document.querySelector("#cant").value = item.childNodes[2].textContent;
      });
     })
+   }
+
+   const mostrar = ()=>{
+    if (document.querySelector(".tabla-btc tbody").childElementCount > 0) {
+     eliminar(document.querySelector(".tabla-btc tbody"));
+    }
+    bitacoras.forEach(item => {
+     crearElemento(item, document.querySelector(".tabla-btc tbody"));
+    });
+    agregar();
    } 
