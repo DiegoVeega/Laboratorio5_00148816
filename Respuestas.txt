@@ -1,0 +1,23 @@
+1. Contiene los elementos que contenido en el elemento
+    con id "bitacora", el formulario.
+
+2. El metodo evt.preventDefault() evita que los datos del formulario sean enviado
+    por defecto en el evento submit.
+
+3.Formulario[x] contiene el valor del elemento en la posicion especificada como x.
+
+4. por CreateElement a estos se les agrega el elemento HTML especificado,
+    en tr se agrega el elemento HTML tr y a td el elemento HTML td.
+
+    Ademos td contiene un nodo como hijo de este, que es content.
+    tr contiene un nodo como hijo, que es tr.
+
+5. Content contiene un nodo de texto del elemento que pasa por el Foreach.
+
+6. 
+
+7. recorre los lo elementos que se encuentrar en el elemento con id bitacora, 
+
+8. obtiene el primer hijo del elemnto al que se le aplica.
+
+9. mientras este ese elemento se removera ese elemento, por lo tanto ya no tendra elementos.
